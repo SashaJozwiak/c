@@ -2,7 +2,7 @@
 
 
 //dollar exchange rate
-int	main(void)
+int	der(void)
 {
   int dollars;
   double kurs;
@@ -14,7 +14,7 @@ int	main(void)
 };
 
 //perimentr
-int	main(void) 
+int	per(void) 
 {
     int length, width;
 
@@ -26,11 +26,9 @@ int	main(void)
   return 0;
 }
 
-//sum every digit
+//sum every digit>
 
-#include <stdio.h>
-
-int	main() 
+int	sedn(void) 
 {
     int num;
 
