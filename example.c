@@ -41,3 +41,14 @@ int	sedn(void)
   return 0;
 }
 
+//degree to radians
+
+int dtr(void) {
+    // put your code here
+    int deg;
+    scanf("%d", &deg);
+    double rad = deg * 3.1415926 / 180;
+    printf("%.2f", rad);
+    return 0;
+};
+
