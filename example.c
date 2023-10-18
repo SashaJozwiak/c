@@ -52,3 +52,14 @@ int dtr(void) {
     return 0;
 };
 
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (void)
+{
+  int o,t;
+  scanf("%i%i", &o, &t);
+  int rnd = o + rand()%(t-o-1);
+  printf("%i", rnd);
+};
+
