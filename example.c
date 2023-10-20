@@ -63,3 +63,13 @@ int main (void)
   printf("%i", rnd);
 };
 
+//5.1 — 5
+
+int main (void) {
+  int a=0;
+  scanf("%d", &a);
+  int cap = 249.5/0.05 * a;
+  double mol = 249.5 * a / 3e-23;
+  printf("%d %.3e", cap, mol);
+  return 0;
+}
