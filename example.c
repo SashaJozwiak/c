@@ -73,3 +73,19 @@ int main (void) {
   printf("%d %.3e", cap, mol);
   return 0;
 }
+
+//https://stepik.org/lesson/53872/step/7?unit=32085
+
+int main() {
+  int a = 0, b = 0;
+    
+  scanf("%d %d", &a, &b);
+    
+  double c = (double)a/b;
+  double d = (int)(c*10)%10;
+
+  printf("%d %d", (int)c%10, (int)d);
+
+ return 0;
+}
+
