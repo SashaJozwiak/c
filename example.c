@@ -89,3 +89,25 @@ int main() {
  return 0;
 }
 
+/*
+
+Sample Input 1:
+
+248
+Sample Output 1:
+
+842
+Sample Input 2:
+
+230
+Sample Output 2:
+
+32
+*/
+
+
+int main(void) {
+int a;
+	scanf("%d", &a);
+	print("%d", a%10*100 + a%100/10*10 + a/100);
+}
