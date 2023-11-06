@@ -111,3 +111,17 @@ int a;
 	scanf("%d", &a);
 	print("%d", a%10*100 + a%100/10*10 + a/100);
 }
+
+//https://stepik.org/lesson/53872/step/9?unit=32085
+
+int main() {
+  int num, even, odd;
+    
+    scanf("%d", &num);
+    
+    even = (num%100/10) * (num/1000);
+    odd = (num%10) * (num%1000/100);
+
+    printf("%.2f", (double)even/odd);
+  return 0;
+}
