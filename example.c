@@ -125,3 +125,14 @@ int main() {
     printf("%.2f", (double)even/odd);
   return 0;
 }
+
+//https://stepik.org/lesson/53872/step/10?unit=32085
+//Одно число, равное разности между количеством байт в 
+
+int main() {
+  int k=0;
+  scanf("%i", &k);
+  long long int res = pow(2, 30)*k - pow (10, 9)*k;
+  printf("%u", res);
+  return 0;
+}
