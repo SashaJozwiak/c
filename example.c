@@ -136,3 +136,16 @@ int main() {
   printf("%u", res);
   return 0;
 }
+
+//opposite value 1 or 0
+//1=> 0, 0=>1
+// #include <stdlib.h>
+
+int main() {
+int a;
+
+scanf("%d", &a);
+printf("%d", abs(a-1));
+
+return 0;
+};
