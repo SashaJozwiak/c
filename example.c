@@ -149,3 +149,13 @@ printf("%d", abs(a-1));
 
 return 0;
 };
+
+// 1- x=y; 0-x!=y; 6.2 https://stepik.org/lesson/57210/step/8?unit=35061
+
+int main() {
+  // put your code here
+    int x,y;
+    scanf("%d%d", &x, &y);
+    printf("%d", (x==y));
+  return 0;
+}
