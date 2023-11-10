@@ -14,7 +14,7 @@ int	der(void)
 };
 
 //perimentr
-int	per(void) 
+int per(void)
 {
     int length, width;
 
@@ -157,5 +157,24 @@ int main() {
     int x,y;
     scanf("%d%d", &x, &y);
     printf("%d", (x==y));
+  return 0;
+}
+
+// 6.2.2
+
+int main()
+{
+  double x, y;
+  scanf("%lf%lf", &x, &y);
+
+  if (x > 0 && y > 0)
+    printf("1");
+  if (x < 0 && y > 0)
+    printf("2");
+  if (x < 0 && y < 0)
+    printf("3");
+  if (x > 0 && y < 0)
+    printf("4");
+
   return 0;
 }
