@@ -240,3 +240,19 @@ int main(void) {
   return 0;
 }
 
+//#include <stdio.h>
+// calc + - / *
+
+int main() {
+    char x;
+    int a, b;
+    scanf("%c%d%d", &x, &a, &b);
+        switch(x) {
+            case '+' : printf("%0.2f", (double)a + b); break;
+            case '-' : printf("%0.2f", (double)a - b); break;
+            case '*' : printf("%0.2f", (double)a * b); break;
+            case '/' : printf("%0.2f", (double)a / b); break;
+            default : printf("ERROR!");
+        }
+}
+
