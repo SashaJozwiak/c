@@ -280,3 +280,46 @@ int main() {
   return 0;
 }
 
+//years
+//#include <stdio.h>
+
+int main() {
+  int age=0;
+  scanf("%d", &age);
+  if (age%10==1 && age/10!=1) printf("Мне %d год", age);
+  else if ((age%10==2 || age%10==3 || age%10==4) && age/10!=1) printf("Мне %d года", age);
+  else printf("Мне %d лет", age);
+  return 0;
+}
+
+
+
+
+//distance between two points
+//#include <stdio.h>
+//#include <math.h>
+
+int main() {
+  double x1=0, y1=0, x2=0, y2=0;
+  scanf("%lf%lf", &x1, &y1);
+  scanf("%lf%lf", &x2, &y2);
+  double r1 = sqrt (x1*x1+y1*y1);
+  double r2 = sqrt (x2*x2+y2*y2);
+  printf(r1<r2 ? "1" : "2");
+    return 0;
+}
+
+//#include <stdio.h>
+//factorial
+
+int main() {
+    // put your code here
+    int a, result = 1;
+    scanf("%d", &a);
+        for(int i = 1; i <= a; i++) {
+            result *=i;
+        }
+    printf("%d", result);
+        
+    return 0;
+}
