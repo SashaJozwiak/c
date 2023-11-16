@@ -323,3 +323,23 @@ int main() {
         
     return 0;
 }
+
+//fibonacci
+//#include <stdio.h>
+
+int main() {
+  int n=0;
+  int x=1, y=0;
+    //x=1; y=1;
+    //x=2; y=1;
+    //x=3; y=2;
+    //x=5; y=3;
+    //x=8; y=5;
+  scanf("%d", &n);
+  for (int i=0; i<n; i++) {
+      x += y;
+	  y = x-y;
+  }
+    printf("%d", y);
+  return 0;
+}
