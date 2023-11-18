@@ -343,3 +343,81 @@ int main() {
     printf("%d", y);
   return 0;
 }
+
+//#include <stdio.h>
+// https://stepik.org/lesson/57650/step/8?unit=35411
+// 3 4 4 5 5 5 6 6 6 6 etc for input (3,6)
+
+int main() {
+    // put your code here
+    int a, b;
+    scanf("%d%d", &a, &b);
+    
+    for (int i = a; i <= b; i++) {
+        for (int j=0; j<=i-a; j++) {
+            printf("%5d", i);
+        }
+    }
+    return 0;
+}
+
+//find simple digits
+
+//#include <stdio.h> 
+//#include <math.h>
+
+   int main() { 
+   int n, res; 
+       scanf("%d",&n); 
+        for(int i=2; i <= sqrt(n); i++) {
+            res=n%i;
+            if (res == 0 && i != n) {
+                printf ("0");
+                return 0;
+            }
+         }
+       printf ("1");
+       return 0; 
+}
+
+
+//search max value from input
+
+//#include <stdio.h>
+
+int main(void) {
+
+  int N = 0;
+
+  scanf("%d", &N);
+
+  int max = -9999;
+  int number = 0;
+
+  for (int i = 1; i <= N; i++){
+    scanf("%d", &number);
+    if (max < number)
+      max = number;
+  }
+
+  printf("%d\n", max);
+
+  return 0;
+}
+
+
+
+//#include <stdio.h>
+//sum nums
+
+int main() {
+  // put your code here
+    int num, sum = 0;
+    do {
+        scanf("%d", &num);
+        sum += num;
+    } while (num != 0);
+    
+    printf("%d", sum);
+  return 0;
+}
