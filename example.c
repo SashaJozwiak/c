@@ -421,3 +421,77 @@ int main() {
     printf("%d", sum);
   return 0;
 }
+
+//#include <stdio.h>
+//find min/max value
+
+int main() {
+    // put your code here
+    int inp, min=9999, max=-9999;
+    
+    do {
+        scanf("%d", &inp);
+        if (inp > max && inp != 0) {
+            max = inp;
+        } 
+        if (inp < min && inp != 0) {
+            min = inp;
+        }
+    } while (inp != 0);
+    
+    printf("%d %d", max, min);
+    
+    return 0;
+}
+
+
+//По данном числу N  определить, является ли оно степенью числа 
+//#include <stdio.h>
+//#include <math.h>
+
+int main() {
+    // put your code here
+    float num;
+    
+    scanf("%f", &num);
+    
+    float log = log2(num);
+    int logInt = log;
+    
+    if (log == logInt) {
+        printf("YES");
+    } else {
+        printf("NO");
+    }
+    
+    return 0;
+}
+
+//and other solution without math library
+
+//#include <stdio.h>
+
+int main() {
+  int n=0;
+  scanf("%d", &n);
+  for (int i=1; i<=n; i*=2)
+  {
+      if (i==n) {printf("YES"); return 0;}
+  }
+  printf("NO");
+  return 0;
+}
+
+//#include <stdio.h>
+//#include <math.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    
+    for (int i=1; (pow(2,i)) <= n; i++) {
+        printf("%d ", i);
+    }
+    
+  return 0;
+}
