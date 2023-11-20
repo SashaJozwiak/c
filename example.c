@@ -495,3 +495,20 @@ int main() {
     
   return 0;
 }
+
+//#include <stdio.h>
+//continue/brack training
+
+int main() {
+    int num;
+    
+    while (1==1) {
+    scanf("%d", &num);
+        if (num < 0) continue;
+        if (num == 0) break;
+    printf("%d ", num);
+    }
+    
+  return 0;
+}
+
