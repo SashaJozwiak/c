@@ -512,3 +512,81 @@ int main() {
   return 0;
 }
 
+
+
+//1 
+//2 2 
+//3 3 3 
+//4 4 4 4 
+//5 5 5 5 5
+
+//#include <stdio.h>
+
+
+int main() {
+    int num = 0;
+    scanf("%d", &num);
+    
+    for (int i=1; i <= num; i++) {
+        for (int j=1; j<=i; j++) {
+            printf("%d ", j);
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
+
+
+// nums in arr as odd and even
+//#include <stdio.h>
+
+int main() {
+  // put your code here
+    int count, num;
+    
+    scanf("%d", &count);
+    int arr[count]; 
+    
+    for(int i=0; i < count; i++) {
+        scanf("%d", &arr[i]);
+    }
+    
+    for (int i = 0; i < count; i++) {
+        //scanf("%d", &num);
+        if (arr[i]%2 == 0) {
+            printf("%d ", arr[i]);
+        }
+    }
+    
+    for (int i = 0; i < count; i++) {
+        //scanf("%d", &num);
+        if (arr[i]%2 != 0) {
+            printf("%d ", arr[i]);
+        }
+    }
+   
+    
+  return 0;
+}
+
+
+//#include <stdio.h>
+// 2x matrix array
+
+
+int main() {
+    int rows, columns;
+    scanf("%d", &rows);
+    scanf("%d", &columns);
+    
+    for(int i = 0; i < rows; i++) {
+        for(int j = 0; j < columns; j++) {
+            int value = 0;
+            scanf("%d ", &value);
+            printf("%d ", value);
+        }
+        printf("\n");
+    }
+  return 0;
+}
