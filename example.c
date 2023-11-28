@@ -627,3 +627,37 @@ int main() {
   return 0;
 }
 
+
+//#include <stdio.h>
+
+int main() {
+    int n, sum_primary = 0, sum_secondary = 0;
+    scanf("%d", &n);
+    
+    int arr[n][n];
+    
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++){
+            scanf("%d", &arr[i][j]);
+        }
+    }
+    
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++){
+            if (i+j > n-1) {
+                sum_secondary += arr[i][j];
+            }
+            if (i < j) {
+                sum_primary += arr[i][j];
+            }
+        }
+    }
+
+    if (sum_primary <= sum_secondary) {
+        printf("%d %d", sum_primary, sum_secondary);
+    } else {
+        printf("%d %d", sum_secondary, sum_primary);
+    }
+    
+    return 0;
+}
