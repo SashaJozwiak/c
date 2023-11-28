@@ -590,3 +590,40 @@ int main() {
     }
   return 0;
 }
+
+
+//#include <stdio.h>
+
+int main() {
+    int n = 0, mult_primary = 1, mult_second = 1;
+
+    scanf("%d", &n);
+    
+    int arr [n][n];
+    
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            scanf("%d", &arr[i][j]);
+        }
+    }
+    
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if (i == j) {
+                mult_primary *= arr[i][j];
+            }
+            if (j+i == n-1) {
+                mult_second *= arr[i][j]; 
+            }
+        }
+    }
+    
+    if (mult_primary >= mult_second) {
+        printf("%d %d", mult_primary, mult_second);
+    } else {
+        printf("%d %d", mult_second, mult_primary);
+    }
+    
+  return 0;
+}
+
