@@ -661,3 +661,38 @@ int main() {
     
     return 0;
 }
+
+
+
+
+//#include <stdio.h>
+
+int main() {
+  int row, col;
+  scanf("%d%d", &row, &col);
+    
+  int arr[row][col], sum[col], count = col-1;
+    
+    for (int i = 0; i < col; i++) {
+     sum[i]= 0;
+    }
+    
+    for (int i = 0; i < row; i++) {
+      for (int j = 0; j < col; j++) {
+          scanf("%d ", &arr[i][j]);
+      }
+    }
+    
+    for (int i = 0; i < col; i++) {
+      for (int j = 0; j < row; j++) {
+          sum[count] += arr[j][i];
+      }
+      count -= 1;
+  }
+    
+    for (int i = 0; i < col; i++) {
+        printf("%d ", sum[i]);
+    }
+    
+  return 0;
+}
