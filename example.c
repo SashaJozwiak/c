@@ -696,3 +696,52 @@ int main() {
     
   return 0;
 }
+
+
+
+//#include <stdio.h>
+//shift matrix to count position
+
+
+int main() {
+  int size, count;
+  scanf("%d", &size);
+  int arr[size][size];
+    
+    //fill arr
+    for (int i=0; i<size; i++) {
+        for (int j=0; j<size; j++) {
+            scanf("%d", &arr[i][j]);
+        }
+    }
+    
+    scanf("%d", &count);
+    
+    if (count>size) count %= size;
+    
+    int new_arr[size][size];
+    
+    //fill new_arr
+        for (int i=0; i<size; i++) {
+         for (int j=0; j<size; j++) {
+             if (j+count >= size) {
+                 new_arr[i][j+count-size] = arr[i][j]; 
+             } else {
+                 new_arr[i][j+count] = arr[i][j];
+             }
+         } 
+        }
+    
+    
+    //output arr
+    for (int i=0; i<size; i++) {
+        for (int j=0; j<size; j++) {
+            printf("%d", new_arr[i][j]);
+        }
+        printf("\n");
+    }
+  
+    
+    
+  return 0;
+}
