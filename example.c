@@ -795,3 +795,14 @@ int main() {
  
      return 0;
     }
+
+//char to uppercase
+//#include <stdio.h>
+
+int main() {
+  char symbol = "a";
+  scanf("%c", &symbol);
+  printf("%c", symbol-32);
+    
+  return 0;
+}
