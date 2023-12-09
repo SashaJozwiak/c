@@ -806,3 +806,27 @@ int main() {
     
   return 0;
 }
+
+
+//https://stepik.org/lesson/64750/step/5?unit=41555
+//#include <stdio.h>
+
+int main() {
+    // put your code here
+    int count;
+    scanf("%d", &count);
+    
+    int arr[26] = {0};
+    
+    for(int i = 0; i <= count; i++) {
+        char symb = 'a';
+        scanf("%c ", &symb);
+        if (symb > 64 && symb < 91) symb += 32;
+        arr[symb-'a']++;
+    }
+    
+    for (int i = 0; i < 26; i++) {
+        printf("%d ", arr[i]);
+    }
+    return 0;
+}
