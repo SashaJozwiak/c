@@ -830,3 +830,20 @@ int main() {
     }
     return 0;
 }
+
+
+//#include <stdio.h>
+//num to cunt alfabet
+
+int main() {
+  // put your code here
+  int num = 0;
+  scanf("%d", &num);
+  
+  char symbol = 'a' + (num-1);
+  char symbol_uppercase = 'A' + (num-1);
+      
+  printf("%c%c", symbol_uppercase, symbol);
+  
+  return 0;
+}
