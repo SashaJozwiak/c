@@ -847,3 +847,20 @@ int main() {
   
   return 0;
 }
+
+//count the number of characters
+//#include <stdio.h>
+
+int main() {
+    // put your code here
+    int count = 0;
+    while (1) {
+        char symb = 'a';
+        scanf("%c", &symb);
+        if (symb == '\0') break;
+        count++;
+    }
+    
+    printf("%d", count);
+    return 0;
+}
