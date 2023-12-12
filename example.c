@@ -864,3 +864,28 @@ int main() {
     printf("%d", count);
     return 0;
 }
+
+//count words
+int main() {
+    // put your code here
+    int words_count = 0;
+    char symbol = 'a', last_symb = ' ';
+    
+    while (1) {
+        scanf("%c", &symbol);
+        if (symbol == ' ' && last_symb != ' ') {
+            words_count++;
+        }
+
+        if (symbol == '\n') {
+            if (last_symb != ' ') words_count++;
+        break;
+        }
+        
+        last_symb = symbol;
+
+    }
+    
+    printf("%d", words_count);
+    return 0;
+}
