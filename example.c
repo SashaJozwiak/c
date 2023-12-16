@@ -889,3 +889,31 @@ int main() {
     printf("%d", words_count);
     return 0;
 }
+
+
+
+//#include <stdio.h>
+//9.5
+int main() {
+    
+      int k = 0; 
+      char lastSymb = ' ';
+      char symb = 'a';
+    
+    while (1) {   
+          scanf ("%c", &symb);
+          if (lastSymb == ' ' && symb == ' ') {
+              lastSymb = symb;
+              continue;
+          }
+          if (symb == '\n') {
+              if (lastSymb != ' ') printf ("%c", lastSymb);
+              break;
+          }
+          printf ("%c", lastSymb);
+          lastSymb = symb;
+      }
+    
+
+  return 0;
+}
