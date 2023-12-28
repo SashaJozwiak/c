@@ -917,3 +917,31 @@ int main() {
 
   return 0;
 }
+
+
+
+
+//#include <stdio.h>
+//9.2
+
+int main() {
+  char str1[13];
+  char str2[13];
+  for (int i=0; i < 13; i++) {
+      str1[i]=0;
+      str2[i]=0;
+  }
+    
+  scanf("%s", str1);
+  scanf("%s", str2);
+    
+  int count = 0;
+    
+  for (int i=0; i < 13; i++) {
+      if (str1[i] != str2[i]) count++;
+  }
+    
+  printf ("%d", count);
+    
+  return 0;
+}
